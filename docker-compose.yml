@@ -1,0 +1,26 @@
+services:
+  tiny-faces:
+    build:
+      context: .
+    shm_size: '16gb'
+    environment:
+      - CUDA_LAUNCH_BLOCKING=1
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
+    volumes:
+      - .:/home/tiny-faces
+
+    working_dir: /home/tiny-faces
+
+    ports:
+      - "6163:6163"
+    command:
+      jupyter-lab --ip 0.0.0.0 --allow-root  --port=6163 --NotebookApp.token=''
+    tty: true
+
+

@@ -28,7 +28,7 @@ def arguments():
     parser.add_argument("--nms_thresh", type=float, default=0.3)
     parser.add_argument("--workers", default=8, type=int)
     parser.add_argument("--batch_size", default=1, type=int)
-    parser.add_argument("--results_dir", default=None)
+    parser.add_argument("--results_dir", default="results")
     parser.add_argument("--debug", action="store_true")
 
     return parser.parse_args()

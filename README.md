@@ -1,51 +1,58 @@
-# tiny-faces-pytorch
+# Index
 
-This is a PyTorch implementation of Peiyun Hu's [awesome tiny face detector](https://github.com/peiyunh/tiny). 
+- [Introduction](#introduction)
+- [Updates!!](#updates)
+- [Coming soon](#coming-soon)
+- [Environment](#environment)
+- [Quick Start](#quick-start)
+- [Detail](#detail)
+- [Reference site](#reference-site)
 
-We use (and recommend) **Python 3.6+** for minimal pain when using this codebase (plus Python 3.6 has really cool features).
+## Introduction
 
-**NOTE** Be sure to cite Peiyun's CVPR paper and this repo if you use this code!
+リポジトリの概要をここに書きます．
 
-This code gives the following mAP results on the WIDER Face dataset:
 
-| Setting | mAP   |
-|---------|-------|
-| easy    | 0.902 |
-| medium  | 0.892 |
-| hard    | 0.797 |
+## Updates!!
+* 【2022/04/14】 更新情報をここに書きます
+* 【2021/08/19】 更新情報をここに書きます
+* 【2021/08/05】 更新情報をここに書きます
+* 【2021/07/28】 更新情報をここに書きます
+* 【2021/07/26】 更新情報をここに書きます
+* 【2021/07/20】 更新情報をここに書きます
 
-## Getting Started
+## Coming soon
+- [ ] 今後実装される予定ものをここに書きます
+- [ ] 今後実装される予定ものをここに書きます
+- [ ] 今後実装される予定ものをここに書きます
+- [ ] 今後実装される予定ものをここに書きます
 
-- Clone this repository.
-- Download the WIDER Face dataset and annotations files to `data/WIDER`.
-- Install dependencies with `pip install -r requirements.txt`.
+## Environment
 
-Your data directory should look like this for WIDERFace
+- 動作環境を記載します
+- 動作環境を記載します
+- 動作環境を記載します
 
+## Quick Start
+
+
+```bash
+
+docker-compose exec tiny-faces /bin/bash
+
+pip install -r requirements.txt
+
+pip install treelib
+
+pip install pyclustering
 ```
-- data
-    - WIDER
-        - README.md
-        - wider_face_split
-        - WIDER_train
-        - WIDER_val
-        - WIDER_test
-```
 
-## Pretrained Weights
 
-You can find the pretrained weights which get the above mAP results [here](https://drive.google.com/open?id=1V8c8xkMrQaCnd3MVChvJ2Ge-DUfXPHNu).
+## Detail
 
-## Training
+リポジトリの詳細な説明をここに書きます．
 
-Just type `make` at the repo root and you should be good to go!
 
-In case you wish to change some settings (such as data location), you can modify the `Makefile` which should be super easy to work with.
+## Reference site
 
-## Evaluation
-
-To run evaluation and generate the output files as per the WIDERFace specification, simply run `make evaluate`. The results will be stored in the `val_results` directory.
-
-You can then use the dataset's `eval_tools` to generate the mAP numbers (this needs Matlab/Octave).
-
-Similarly, to run the model on the test set, run `make test` to generate results in the `test_results` directory.
+- [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)
