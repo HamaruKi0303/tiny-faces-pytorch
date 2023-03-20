@@ -1,6 +1,8 @@
 # Index
 
 - [Introduction](#introduction)
+- [Updates!!](#updates)
+- [Coming soon](#coming-soon)
 - [Environment](#environment)
 - [Quick Start](#quick-start)
 - [Detail](#detail)
@@ -13,6 +15,11 @@
 
 「tiny-faces-pytorch」を`Docker`で動かしていきます．
 
+## Updates!!
+* 【2022/03/XX】初版投稿 
+
+## Coming soon
+- [ ] セットアップ部分を`Docker`へ移行
 
 
 ## Environment
